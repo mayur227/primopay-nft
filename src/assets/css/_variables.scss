@@ -1,0 +1,167 @@
+// Variables
+// --------------------------
+
+@font-face {
+    font-family: "ProximaNova-Black";
+    src: url("../fonts/ProximaNova-Black/ProximaNova-Black.eot");
+    src: url("../fonts/ProximaNova-Black/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/ProximaNova-Black/ProximaNova-Black.woff2") format("woff2"), 
+        url("../fonts/ProximaNova-Black/ProximaNova-Black.woff") format("woff"),
+        url("../fonts/ProximaNova-Black/ProximaNova-Black.ttf") format("truetype"), 
+        url("../fonts/ProximaNova-Black/ProximaNova-Black.svg#ProximaNova-Black") format("svg");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "ProximaNova-Extrabold";
+    src: url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot");
+    src: url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.woff2") format("woff2"), 
+        url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.woff") format("woff"),
+        url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.ttf") format("truetype"), 
+        url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.svg#ProximaNova-Extrabold") format("svg");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot");
+    src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), 
+        url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"),
+        url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype"), 
+        url("../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
+    src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff2") format("woff2"), 
+        url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"),
+        url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype"), 
+        url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "ProximaNova-Medium";
+    src: url("../fonts/ProximaNova-Medium/ProximaNova-Medium.eot");
+    src: url("../fonts/ProximaNova-Medium/ProximaNova-Medium.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/ProximaNova-Medium/ProximaNova-Medium.woff2") format("woff2"), 
+        url("../fonts/ProximaNova-Medium/ProximaNova-Medium.woff") format("woff"),
+        url("../fonts/ProximaNova-Medium/ProximaNova-Medium.ttf") format("truetype");
+        // url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+    src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), 
+        url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"),
+        url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype"), 
+        url("../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --body-font-family: "ProximaNova-Regular";
+    --font-family-black: "ProximaNova-Black";
+    --font-family-extrabold: "ProximaNova-Extrabold";
+    --font-family-bold: "ProximaNova-Bold";
+    --font-family-semibold: "ProximaNova-Semibold";
+    --font-family-medium: "ProximaNova-Medium";
+    --white:#ffffff;
+    --black:#000000;
+    --theme-color:#2DCCD4;
+    --theme-color-2:#08A3B0;
+    --theme-light-color:#d5f5f7;
+    --primary-color:#001E32;
+    --gray:#aaaaaa;
+    --gray-dark:#838383;
+    --gray-light:#E9EAEB;
+    --gray-light-secondary:#F3F5F8;
+    --light:#E5E6EF;
+    --light-white:#F9F9F9;
+    --light-white-2:#f5f5f5;
+    --green:#4BB543;
+    --danger:#ED4337;
+    --danger-light: #F6E1DC;
+    --warning:#f0ad02;
+    --warning-light:#fff3cd;
+    --success:#00bf71;
+    --success-light: #E6F2E3;
+    --success-hover:#13db89;
+    --info:#1890ff;
+    --orange:#FCA05E;
+    --orange-light:#FFF1E7;
+    --pending:#EB7A61;
+    --pending-light:#EB7A61;
+    --yellow:#F4B30B;
+    --disabled:#C4C4C4;
+    --blue-light:#cedffe;
+    --blue-2:#479FD7;
+    --blue-hover-2:#5796e9;
+    --dark-blue-gray: #62839d;
+    --scroll-track : #e0e6f0;
+    --scroll-thumb: #b4bbcb;
+}
+
+// font-family
+$body-font-family: var(--body-font-family);
+$font-family-black: var(--font-family-black);
+$font-family-extrabold: var(--font-family-extrabold);
+$font-family-semibold: var(--font-family-semibold);
+$font-family-bold: var(--font-family-bold);
+$font-family-medium: var(--font-family-medium);
+
+// #color
+$white:var(--white);
+$black:var(--black);
+$theme-color: var(--theme-color);
+$theme-color-2: var(--theme-color-2);
+$theme-light-color: var(--theme-light-color);
+$primary-color:var(--primary-color);
+$primary-light-color:var(--primary-light-color);
+$secondary-color:var(--secondary-color);
+$sub-dark:var(--sub-dark);
+$gray:var(--gray);
+$gray-dark:var(--gray-dark);
+$gray-light:var(--gray-light);
+$gray-light-secondary:var(--gray-light-secondary);
+$gray-light-300:var(--gray-light-300);
+$light:var(--light);
+$light-white:var(--light-white);
+$light-white-2:var(--light-white-2);
+
+$green:var(--green);
+$danger:var(--danger);
+$danger-light: var(--danger-light);
+$warning:var(--warning);
+$warning-light:var(--warning-light);
+$success:var(--success);
+$success-light: var(--success-light);
+$success-hover:var(--success-hover);
+$info:var(--info);
+$orange:var(--orange);
+$orange-light:var(--orange-light);
+$pending:var(--pending);
+$pending-light:var(--pending-light);
+$yellow:var(--yellow);
+$disabled:var(--disabled);
+$blue-light:var(--blue-light);
+$blue-2:var(--blue-2);
+$blue-hover-2:var(--blue-hover-2);
+$dark-blue-gray:var(--dark-blue-gray);
+$scroll-track:var(--scroll-track);
+$scroll-thumb:var(--scroll-thumb);
